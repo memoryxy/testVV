@@ -7,26 +7,63 @@
 //
 
 #import "YXGifVC.h"
+#import <VirtualView/VVTemplateManager.h>
+#import <VirtualView/VVViewFactory.h>
+#import <VirtualView/VVViewContainer.h>
 
 @interface YXGifVC ()
+@property (nonatomic, strong) UIScrollView *scrollView;
+@property (nonatomic, strong) VVViewContainer *container;
 
 @end
 
 @implementation YXGifVC
 
+- (instancetype)initWithFilename:(NSString *)filename
+{
+    if (self = [super init]) {
+        self.title = filename;
+        self.edgesForExtendedLayout = UIRectEdgeNone;
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    self.scrollView = [UIScrollView new];
+    [self.view addSubview:self.scrollView];
+    
+    if (![[VVTemplateManager sharedManager].loadedTypes containsObject:self.title]) {
+        NSString *path = [[NSBundle mainBundle] pathForResource:self.title ofType:@"out"];
+        [[VVTemplateManager sharedManager] loadTemplateFile:path forType:nil];
+    }
+    self.container = [VVViewContainer viewContainerWithTemplateType:self.title];
+    [self.scrollView addSubview:self.container];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    self.scrollView.frame = self.view.bounds;
+    CGFloat viewWidth = CGRectGetWidth(self.view.bounds);
+    CGSize size = CGSizeMake(viewWidth, 1000);
+    size = [self.container estimatedSize:size];
+    self.scrollView.contentSize = size;
+    self.container.frame = CGRectMake(0, 0, size.width, size.height);
+    [self.container update:self.params];
 }
-*/
+
+- (NSDictionary *)params
+{
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"sm" ofType:@"json"];
+    NSString *str = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
+    NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:[str dataUsingEncoding:NSUTF8StringEncoding] options:0 error:nil];
+    
+    return dic;
+}
+
 
 @end

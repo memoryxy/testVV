@@ -14,6 +14,7 @@
 #import <VirtualView/VVNodeClassMapper.h>
 #import <VirtualView/VVBinaryStringMapper.h>
 #import "SuperMemVC.h"
+#import "YXGifVC.h"
 
 @interface MainViewController ()
 
@@ -76,6 +77,8 @@
         vc = [[TableViewController alloc] init];
     } else if ([demoName isEqualToString:@"SuperMem"]) {
         vc = [[SuperMemVC alloc] initWithFilename:demoName];
+    } else if ([demoName isEqualToString:@"GifImage"]) {
+        vc = [[YXGifVC alloc] initWithFilename:demoName];
     } else {
         vc = [[TestViewController alloc] initWithFilename:demoName];
     }
