@@ -54,8 +54,7 @@
     return ret;
 }
 
-- (void)updateFrame
-{
+- (void)updateFrame {
     [super updateFrame];
     if (self.src && self.src.length > 0) {
         if ([self.src containsString:@"//"]) {

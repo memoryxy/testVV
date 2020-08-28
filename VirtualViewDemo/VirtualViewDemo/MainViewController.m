@@ -46,6 +46,8 @@
     [VVBinaryStringMapper registerString:@"dot9Right"];
     [VVBinaryStringMapper registerString:@"dot9Bottom"];
     [VVBinaryStringMapper registerString:@"dot9Scale"];
+    
+    [VVBinaryStringMapper registerString:@"aniInt"];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section

@@ -21,21 +21,15 @@
             layoutWidth="match_parent"
             layoutHeight="16"/>
     <GifImage
+            id="100"
+            aniInt="5.3"
             src="right_bubble"
             layoutMarginTop="5"
             layoutWidth="200"
-            layoutHeight="100" />
-    <Grid
-        layoutWidth="match_parent"
-        layoutHeight="200"
-        paddingLeft="20"
-        paddingTop="10"
-        paddingRight="20"
-        paddingBottom="10"
-        background="#ffeeee"
-        itemHorizontalMargin="5"
-        colCount="3"
-        itemHeight="180"
-        dataTag="${data}"/>
+            layoutHeight="200"
+            action="${picUrl}"
+            dataTag="${info}"
+            dataDic="${dic}"
+            />
 </VHLayout>
 
