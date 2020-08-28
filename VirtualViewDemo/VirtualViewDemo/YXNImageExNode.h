@@ -1,5 +1,5 @@
 //
-//  YXNImageExNode.h
+//  YXGifImageView.h
 //  VirtualViewDemo
 //
 //  Created by wangjianfei on 2020/8/27.

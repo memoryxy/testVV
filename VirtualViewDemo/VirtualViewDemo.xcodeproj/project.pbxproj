@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		1BC4747A67356CF3BD847521 /* libPods-VirtualViewDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E6082ADC15A33D15C5B7130 /* libPods-VirtualViewDemo.a */; };
 		6C3D2DF224F7A49F003CD66B /* GifImage.out in Resources */ = {isa = PBXBuildFile; fileRef = 6C3D2DF124F7A49F003CD66B /* GifImage.out */; };
-		6C3D2DF524F7A7A4003CD66B /* YXGifImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C3D2DF424F7A7A4003CD66B /* YXGifImageView.m */; };
+		6C3D2DF524F7A7A4003CD66B /* YXNImageExNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C3D2DF424F7A7A4003CD66B /* YXNImageExNode.m */; };
 		6C3D2DF724F7B5A4003CD66B /* sm.json in Resources */ = {isa = PBXBuildFile; fileRef = 6C3D2DF624F7B5A4003CD66B /* sm.json */; };
 		6C3D2DFA24F7B79E003CD66B /* SuperMem.out in Resources */ = {isa = PBXBuildFile; fileRef = 6C3D2DF824F7B79D003CD66B /* SuperMem.out */; };
 		6C3D2DFB24F7B79E003CD66B /* SuperMemItem.out in Resources */ = {isa = PBXBuildFile; fileRef = 6C3D2DF924F7B79E003CD66B /* SuperMemItem.out */; };
-		6C3D2DFE24F7B805003CD66B /* YXNImageExNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C3D2DFD24F7B805003CD66B /* YXNImageExNode.m */; };
+		6C3D2E0124F89D1D003CD66B /* YXVVCustomNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C3D2E0024F89D1D003CD66B /* YXVVCustomNode.m */; };
 		926B400A200396DB0003D88E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 926B4009200396DB0003D88E /* AppDelegate.m */; };
 		926B4012200396DB0003D88E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 926B4011200396DB0003D88E /* Assets.xcassets */; };
 		926B4015200396DB0003D88E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 926B4013200396DB0003D88E /* LaunchScreen.storyboard */; };
@@ -48,13 +48,13 @@
 		4E6082ADC15A33D15C5B7130 /* libPods-VirtualViewDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VirtualViewDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D453CCE6CAF38791AE4FC62 /* Pods-VirtualViewDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VirtualViewDemo.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-VirtualViewDemo/Pods-VirtualViewDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		6C3D2DF124F7A49F003CD66B /* GifImage.out */ = {isa = PBXFileReference; lastKnownFileType = file; name = GifImage.out; path = ../CompileTool/build/out/GifImage.out; sourceTree = "<group>"; };
-		6C3D2DF324F7A7A4003CD66B /* YXGifImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGifImageView.h; sourceTree = "<group>"; };
-		6C3D2DF424F7A7A4003CD66B /* YXGifImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGifImageView.m; sourceTree = "<group>"; };
+		6C3D2DF324F7A7A4003CD66B /* YXNImageExNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXNImageExNode.h; sourceTree = "<group>"; };
+		6C3D2DF424F7A7A4003CD66B /* YXNImageExNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXNImageExNode.m; sourceTree = "<group>"; };
 		6C3D2DF624F7B5A4003CD66B /* sm.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sm.json; sourceTree = "<group>"; };
 		6C3D2DF824F7B79D003CD66B /* SuperMem.out */ = {isa = PBXFileReference; lastKnownFileType = file; name = SuperMem.out; path = ../CompileTool/build/out/SuperMem.out; sourceTree = "<group>"; };
 		6C3D2DF924F7B79E003CD66B /* SuperMemItem.out */ = {isa = PBXFileReference; lastKnownFileType = file; name = SuperMemItem.out; path = ../CompileTool/build/out/SuperMemItem.out; sourceTree = "<group>"; };
-		6C3D2DFC24F7B805003CD66B /* YXNImageExNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXNImageExNode.h; sourceTree = "<group>"; };
-		6C3D2DFD24F7B805003CD66B /* YXNImageExNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXNImageExNode.m; sourceTree = "<group>"; };
+		6C3D2DFF24F89D1D003CD66B /* YXVVCustomNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXVVCustomNode.h; sourceTree = "<group>"; };
+		6C3D2E0024F89D1D003CD66B /* YXVVCustomNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXVVCustomNode.m; sourceTree = "<group>"; };
 		768018E4A5DF1EBDB7E8B550 /* Pods-VirtualViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VirtualViewDemo.release.xcconfig"; path = "../Pods/Target Support Files/Pods-VirtualViewDemo/Pods-VirtualViewDemo.release.xcconfig"; sourceTree = "<group>"; };
 		926B4005200396DB0003D88E /* VirtualViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VirtualViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		926B4008200396DB0003D88E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -147,10 +147,10 @@
 				926B4009200396DB0003D88E /* AppDelegate.m */,
 				926B401E200397AA0003D88E /* MainViewController.h */,
 				926B402A200397AB0003D88E /* MainViewController.m */,
-				6C3D2DF324F7A7A4003CD66B /* YXGifImageView.h */,
-				6C3D2DF424F7A7A4003CD66B /* YXGifImageView.m */,
-				6C3D2DFC24F7B805003CD66B /* YXNImageExNode.h */,
-				6C3D2DFD24F7B805003CD66B /* YXNImageExNode.m */,
+				6C3D2DF324F7A7A4003CD66B /* YXNImageExNode.h */,
+				6C3D2DF424F7A7A4003CD66B /* YXNImageExNode.m */,
+				6C3D2DFF24F89D1D003CD66B /* YXVVCustomNode.h */,
+				6C3D2E0024F89D1D003CD66B /* YXVVCustomNode.m */,
 				926B401F200397AA0003D88E /* TestViewController.h */,
 				926B4020200397AA0003D88E /* TestViewController.m */,
 				6C3D2DF624F7B5A4003CD66B /* sm.json */,
@@ -334,15 +334,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C3D2DFE24F7B805003CD66B /* YXNImageExNode.m in Sources */,
 				926B402B200397AB0003D88E /* TestViewController.m in Sources */,
 				926B4018200396DB0003D88E /* main.m in Sources */,
 				926B400A200396DB0003D88E /* AppDelegate.m in Sources */,
 				926B4034200397AB0003D88E /* MainViewController.m in Sources */,
 				92D80D0720348CC700398A2B /* GridViewController.m in Sources */,
 				92D80D9B20410D7F00398A2B /* Dot9ImageView.m in Sources */,
-				6C3D2DF524F7A7A4003CD66B /* YXGifImageView.m in Sources */,
+				6C3D2DF524F7A7A4003CD66B /* YXNImageExNode.m in Sources */,
 				92D80D0420348CBA00398A2B /* ContainerViewController.m in Sources */,
+				6C3D2E0124F89D1D003CD66B /* YXVVCustomNode.m in Sources */,
 				92D80D0E2035542300398A2B /* PageViewController.m in Sources */,
 				92D80D1B2037CF4800398A2B /* TableViewController.m in Sources */,
 			);

@@ -37,7 +37,7 @@
 {
     [VVNodeClassMapper registerClassName:@"Dot9ImageView" forID:1001];
 //    [VVNodeClassMapper registerClassName:@"YXGifImageView" forID:2020];
-    [VVNodeClassMapper registerClassName:@"YXGifImageView" forID:2019];
+    [VVNodeClassMapper registerClassName:@"YXNImageExNode" forID:2019];
 
     [VVBinaryStringMapper registerString:@"dot9Left"];
     [VVBinaryStringMapper registerString:@"dot9Top"];
