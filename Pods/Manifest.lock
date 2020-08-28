@@ -1,0 +1,29 @@
+PODS:
+  - OCHamcrest (7.1.2)
+  - SDWebImage (4.4.8):
+    - SDWebImage/Core (= 4.4.8)
+  - SDWebImage/Core (4.4.8)
+  - VirtualView (1.2.3):
+    - SDWebImage (~> 4.2)
+
+DEPENDENCIES:
+  - OCHamcrest
+  - VirtualView (from `./`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - OCHamcrest
+    - SDWebImage
+
+EXTERNAL SOURCES:
+  VirtualView:
+    :path: "./"
+
+SPEC CHECKSUMS:
+  OCHamcrest: b284c9592c28c1e4025a8542e67ea41a635d0d73
+  SDWebImage: 783af2c3fa36291a250030c4752ee370a9a51d13
+  VirtualView: b9040f1170e640455d7d88e032029cd62fd7328e
+
+PODFILE CHECKSUM: 16035686818d84b2ae34452596aa71b9694bbab9
+
+COCOAPODS: 1.7.2

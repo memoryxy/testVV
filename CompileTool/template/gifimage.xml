@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VHLayout
+        orientation="V"
+        layoutWidth="750rp"
+        layoutHeight="500"
+        background="#FFFFFF">
+
+    <NText
+            text="local image"
+            textSize="12"
+            textColor="#333333"
+            paddingLeft="5"
+            background="#cccccc"
+            layoutWidth="match_parent"
+            layoutHeight="20"/>
+    <NText
+            text="original image"
+            textSize="10"
+            textColor="#666666"
+            paddingLeft="5"
+            layoutWidth="match_parent"
+            layoutHeight="16"/>
+    <GifImage
+            src="right_bubble"
+            layoutMarginTop="5"
+            layoutWidth="200"
+            layoutHeight="100" />
+    <Grid
+        layoutWidth="match_parent"
+        layoutHeight="200"
+        paddingLeft="20"
+        paddingTop="10"
+        paddingRight="20"
+        paddingBottom="10"
+        background="#ffeeee"
+        itemHorizontalMargin="5"
+        colCount="3"
+        itemHeight="180"
+        dataTag="${data}"/>
+</VHLayout>
+

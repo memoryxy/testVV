@@ -1,0 +1,41 @@
+{
+  "title": "",
+  "subtitle": "",
+  "linkDesc": "https://yanxuan.nosdn.127.net/6c9ef11680e3a98b35e6e46984a5c72b.png",
+  "schemeUrl": "",
+  "welfareModules": [
+    {
+      "type": "SuperMemItem",
+      "title": "超级闪",
+      "schemeUrl": "",
+      "items": [
+        {
+          "picUrl": "https://yanxuan.nosdn.127.net/04d1b5e9dae59d52307e2e472c5703bd.jpg",
+          "itemId": 111
+        }
+      ]
+    },
+    {
+      "type": "SuperMemItem",
+      "title": "免费使用",
+      "schemeUrl": "",
+      "items": [
+        {
+          "picUrl": "https://yanxuan.nosdn.127.net/e6a3a51ba3e585a31ff8820af95ea26f.gif",
+          "itemId": 121
+        }
+      ]
+    },
+    {
+      "type": "SuperMemItem",
+      "title": "会员专项",
+      "schemeUrl": "",
+      "items": [
+        {
+          "picUrl": "https://yanxuan.nosdn.127.net/4231e825fb97eb4c99ef32db170f26ac.png",
+          "itemId": 113
+        }
+      ]
+    }
+  ]
+}

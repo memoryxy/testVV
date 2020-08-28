@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VHLayout flag="flag_clickable|flag_exposure"
+    actionParam="${schemeUrl}"
+    dataParam="${nesScmExtra}"
+    orientation="H"
+    background="#dddddd"
+    borderRadius="8"
+    layoutMarginLeft="0"
+    layoutMarginRight="0"
+    layoutWidth="match_parent"
+    layoutHeight="99">
+    
+    <NImage layoutWidth="90"
+    layoutHeight="match_parent"
+    scaleType="center_crop"
+    src="${linkDesc}"/>
+    
+    <Grid colCount="3"
+        layoutWidth="wrap_content"
+        layoutHeight="wrap_content"
+        layoutMarginLeft="10"
+        layoutMarginRight="0"
+        itemHorizontalMargin="20"
+        dataTag="${welfareModules}"/>
+</VHLayout>
