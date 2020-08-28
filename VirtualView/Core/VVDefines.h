@@ -11,7 +11,7 @@
 #define VV_VERSION  10100 // 1.1.0
 
 #ifdef DEBUG
-#define VV_DEBUG    0
+#define VV_DEBUG    1
 #endif
 
 //#define VV_ALIBABA  1

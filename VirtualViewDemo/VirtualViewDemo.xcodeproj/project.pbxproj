@@ -13,7 +13,9 @@
 		6C3D2DF724F7B5A4003CD66B /* sm.json in Resources */ = {isa = PBXBuildFile; fileRef = 6C3D2DF624F7B5A4003CD66B /* sm.json */; };
 		6C3D2DFA24F7B79E003CD66B /* SuperMem.out in Resources */ = {isa = PBXBuildFile; fileRef = 6C3D2DF824F7B79D003CD66B /* SuperMem.out */; };
 		6C3D2DFB24F7B79E003CD66B /* SuperMemItem.out in Resources */ = {isa = PBXBuildFile; fileRef = 6C3D2DF924F7B79E003CD66B /* SuperMemItem.out */; };
-		6C3D2E0124F89D1D003CD66B /* YXVVCustomNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C3D2E0024F89D1D003CD66B /* YXVVCustomNode.m */; };
+		6C3D2E0524F89E8A003CD66B /* YXGifImageNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C3D2E0424F89E8A003CD66B /* YXGifImageNode.m */; };
+		6C3D2E0824F89F6D003CD66B /* SuperMemVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C3D2E0724F89F6D003CD66B /* SuperMemVC.m */; };
+		6C3D2E0C24F8A27A003CD66B /* YXGifVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 6C3D2E0B24F8A27A003CD66B /* YXGifVC.m */; };
 		926B400A200396DB0003D88E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 926B4009200396DB0003D88E /* AppDelegate.m */; };
 		926B4012200396DB0003D88E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 926B4011200396DB0003D88E /* Assets.xcassets */; };
 		926B4015200396DB0003D88E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 926B4013200396DB0003D88E /* LaunchScreen.storyboard */; };
@@ -53,8 +55,12 @@
 		6C3D2DF624F7B5A4003CD66B /* sm.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = sm.json; sourceTree = "<group>"; };
 		6C3D2DF824F7B79D003CD66B /* SuperMem.out */ = {isa = PBXFileReference; lastKnownFileType = file; name = SuperMem.out; path = ../CompileTool/build/out/SuperMem.out; sourceTree = "<group>"; };
 		6C3D2DF924F7B79E003CD66B /* SuperMemItem.out */ = {isa = PBXFileReference; lastKnownFileType = file; name = SuperMemItem.out; path = ../CompileTool/build/out/SuperMemItem.out; sourceTree = "<group>"; };
-		6C3D2DFF24F89D1D003CD66B /* YXVVCustomNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXVVCustomNode.h; sourceTree = "<group>"; };
-		6C3D2E0024F89D1D003CD66B /* YXVVCustomNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXVVCustomNode.m; sourceTree = "<group>"; };
+		6C3D2E0324F89E8A003CD66B /* YXGifImageNode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGifImageNode.h; sourceTree = "<group>"; };
+		6C3D2E0424F89E8A003CD66B /* YXGifImageNode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGifImageNode.m; sourceTree = "<group>"; };
+		6C3D2E0624F89F6D003CD66B /* SuperMemVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperMemVC.h; sourceTree = "<group>"; };
+		6C3D2E0724F89F6D003CD66B /* SuperMemVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperMemVC.m; sourceTree = "<group>"; };
+		6C3D2E0A24F8A27A003CD66B /* YXGifVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YXGifVC.h; sourceTree = "<group>"; };
+		6C3D2E0B24F8A27A003CD66B /* YXGifVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YXGifVC.m; sourceTree = "<group>"; };
 		768018E4A5DF1EBDB7E8B550 /* Pods-VirtualViewDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VirtualViewDemo.release.xcconfig"; path = "../Pods/Target Support Files/Pods-VirtualViewDemo/Pods-VirtualViewDemo.release.xcconfig"; sourceTree = "<group>"; };
 		926B4005200396DB0003D88E /* VirtualViewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VirtualViewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		926B4008200396DB0003D88E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -117,6 +123,30 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6C3D2E0224F89E6E003CD66B /* CustomNode */ = {
+			isa = PBXGroup;
+			children = (
+				6C3D2DF324F7A7A4003CD66B /* YXNImageExNode.h */,
+				6C3D2DF424F7A7A4003CD66B /* YXNImageExNode.m */,
+				6C3D2E0324F89E8A003CD66B /* YXGifImageNode.h */,
+				6C3D2E0424F89E8A003CD66B /* YXGifImageNode.m */,
+			);
+			path = CustomNode;
+			sourceTree = "<group>";
+		};
+		6C3D2E0924F8A25C003CD66B /* CustomVC */ = {
+			isa = PBXGroup;
+			children = (
+				926B401F200397AA0003D88E /* TestViewController.h */,
+				926B4020200397AA0003D88E /* TestViewController.m */,
+				6C3D2E0624F89F6D003CD66B /* SuperMemVC.h */,
+				6C3D2E0724F89F6D003CD66B /* SuperMemVC.m */,
+				6C3D2E0A24F8A27A003CD66B /* YXGifVC.h */,
+				6C3D2E0B24F8A27A003CD66B /* YXGifVC.m */,
+			);
+			path = CustomVC;
+			sourceTree = "<group>";
+		};
 		926B3FFC200396DB0003D88E = {
 			isa = PBXGroup;
 			children = (
@@ -143,16 +173,12 @@
 			children = (
 				92D80CF22030646900398A2B /* CompileTool */,
 				92D80CE12030228100398A2B /* Resources */,
+				6C3D2E0224F89E6E003CD66B /* CustomNode */,
+				6C3D2E0924F8A25C003CD66B /* CustomVC */,
 				926B4008200396DB0003D88E /* AppDelegate.h */,
 				926B4009200396DB0003D88E /* AppDelegate.m */,
 				926B401E200397AA0003D88E /* MainViewController.h */,
 				926B402A200397AB0003D88E /* MainViewController.m */,
-				6C3D2DF324F7A7A4003CD66B /* YXNImageExNode.h */,
-				6C3D2DF424F7A7A4003CD66B /* YXNImageExNode.m */,
-				6C3D2DFF24F89D1D003CD66B /* YXVVCustomNode.h */,
-				6C3D2E0024F89D1D003CD66B /* YXVVCustomNode.m */,
-				926B401F200397AA0003D88E /* TestViewController.h */,
-				926B4020200397AA0003D88E /* TestViewController.m */,
 				6C3D2DF624F7B5A4003CD66B /* sm.json */,
 				92D80D0220348CBA00398A2B /* ContainerViewController.h */,
 				92D80D0320348CBA00398A2B /* ContainerViewController.m */,
@@ -336,13 +362,15 @@
 			files = (
 				926B402B200397AB0003D88E /* TestViewController.m in Sources */,
 				926B4018200396DB0003D88E /* main.m in Sources */,
+				6C3D2E0824F89F6D003CD66B /* SuperMemVC.m in Sources */,
 				926B400A200396DB0003D88E /* AppDelegate.m in Sources */,
 				926B4034200397AB0003D88E /* MainViewController.m in Sources */,
+				6C3D2E0524F89E8A003CD66B /* YXGifImageNode.m in Sources */,
 				92D80D0720348CC700398A2B /* GridViewController.m in Sources */,
 				92D80D9B20410D7F00398A2B /* Dot9ImageView.m in Sources */,
+				6C3D2E0C24F8A27A003CD66B /* YXGifVC.m in Sources */,
 				6C3D2DF524F7A7A4003CD66B /* YXNImageExNode.m in Sources */,
 				92D80D0420348CBA00398A2B /* ContainerViewController.m in Sources */,
-				6C3D2E0124F89D1D003CD66B /* YXVVCustomNode.m in Sources */,
 				92D80D0E2035542300398A2B /* PageViewController.m in Sources */,
 				92D80D1B2037CF4800398A2B /* TableViewController.m in Sources */,
 			);

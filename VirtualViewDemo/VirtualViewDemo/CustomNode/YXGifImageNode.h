@@ -1,5 +1,5 @@
 //
-//  YXVVCustomNode.h
+//  YXGifImageNode.h
 //  VirtualViewDemo
 //
 //  Created by wangjianfei on 2020/8/28.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface YXVVCustomNode : VVBaseNode
+@interface YXGifImageNode : VVBaseNode
 
 @end
 

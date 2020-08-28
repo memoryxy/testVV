@@ -13,6 +13,7 @@
 #import "TableViewController.h"
 #import <VirtualView/VVNodeClassMapper.h>
 #import <VirtualView/VVBinaryStringMapper.h>
+#import "SuperMemVC.h"
 
 @interface MainViewController ()
 
@@ -36,7 +37,7 @@
 - (void)registerVV
 {
     [VVNodeClassMapper registerClassName:@"Dot9ImageView" forID:1001];
-//    [VVNodeClassMapper registerClassName:@"YXGifImageView" forID:2020];
+    [VVNodeClassMapper registerClassName:@"YXGifImageNode" forID:2020];
     [VVNodeClassMapper registerClassName:@"YXNImageExNode" forID:2019];
 
     [VVBinaryStringMapper registerString:@"dot9Left"];
@@ -73,7 +74,9 @@
         vc = [[PageViewController alloc] initWithFilename:demoName];
     } else if ([demoName isEqualToString:@"TableViewCell"]) {
         vc = [[TableViewController alloc] init];
-   } else {
+    } else if ([demoName isEqualToString:@"SuperMem"]) {
+        vc = [[SuperMemVC alloc] initWithFilename:demoName];
+    } else {
         vc = [[TestViewController alloc] initWithFilename:demoName];
     }
     [self.navigationController pushViewController:vc animated:YES];

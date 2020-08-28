@@ -32,7 +32,7 @@
     BOOL handled;
     handled = [node setIntValue:self.value forKey:self.key];
 #ifdef VV_DEBUG
-    //NSAssert(handled == YES, @"Property is not handled.");
+    NSAssert(handled == YES, @"Property is not handled.");
 #endif
 }
 

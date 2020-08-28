@@ -1,23 +1,25 @@
 //
-//  TestViewController.m
+//  SuperMemVC.m
 //  VirtualViewDemo
 //
-//  Copyright (c) 2017-2018 Alibaba. All rights reserved.
+//  Created by wangjianfei on 2020/8/28.
+//  Copyright © 2020 tmall. All rights reserved.
 //
 
-#import "TestViewController.h"
+#import "SuperMemVC.h"
 #import <VirtualView/VVTemplateManager.h>
 #import <VirtualView/VVViewFactory.h>
 #import <VirtualView/VVViewContainer.h>
 
-@interface TestViewController ()
+
+@interface SuperMemVC ()
 
 @property (nonatomic, strong) UIScrollView *scrollView;
 @property (nonatomic, strong) VVViewContainer *container;
 
 @end
 
-@implementation TestViewController
+@implementation SuperMemVC
 
 - (instancetype)initWithFilename:(NSString *)filename
 {
@@ -34,12 +36,7 @@
     
     self.scrollView = [UIScrollView new];
     [self.view addSubview:self.scrollView];
-    
-//    if (![[VVTemplateManager sharedManager].loadedTypes containsObject:@"GridItem"]) {
-//        NSString *path = [[NSBundle mainBundle] pathForResource:@"GridItem" ofType:@"out"];
-//        [[VVTemplateManager sharedManager] loadTemplateFile:path forType:nil];
-//    }
-    
+        
     if (![[VVTemplateManager sharedManager].loadedTypes containsObject:@"SuperMemItem"]) {
         NSString *path = [[NSBundle mainBundle] pathForResource:@"SuperMemItem" ofType:@"out"];
         [[VVTemplateManager sharedManager] loadTemplateFile:path forType:nil];

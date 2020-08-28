@@ -173,7 +173,7 @@
                 break;
         }
 #ifdef VV_DEBUG
-        //NSAssert(handled == YES, @"Property is not handled.");
+        NSAssert(handled == YES, @"Property is not handled.");
 #endif
     }
 }
